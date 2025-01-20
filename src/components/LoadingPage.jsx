@@ -2,7 +2,7 @@
 // This page is a fallback in case it takes longer to display the desired page.
 
 import React from "react";
-import "../styles/errorpage.css";
+import "../styles/Errorpage.css";
 
 export default function LoadingPage() {
   return (
