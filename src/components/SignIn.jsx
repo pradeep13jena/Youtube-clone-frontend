@@ -48,7 +48,7 @@ export default function SignIn() {
         signIN_password: password,
       } = formValues;
       const formData = {
-        name: name.toLowerCase(),
+        name: name,
         username: username.toLowerCase(),
         password,
       };
@@ -58,7 +58,7 @@ export default function SignIn() {
           if (action === "Login") {
             dispatch(login(res.data.jwtToken));
             navigate("/");
-          } else if (action === "Sign Up") { 
+          } else { 
             console.log(res.data)
             alert(res.data.message)
           }
