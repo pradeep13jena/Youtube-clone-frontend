@@ -14,7 +14,7 @@ const Subscription = lazy(() => import("./src/components/Subscription"));
 const Playlistseen = lazy(() => import("./src/components/Playlistseen"));
 const Channelseen = lazy(() => import("./src/components/Channelseen"));
 const ChannelOwner = lazy(() => import("./src/components/ChannelOwner"));
-const Signin = lazy(() => import("./src/components/Signin"));
+const Signin = lazy(() => import("./src/components/SignIn"));
 
 // Just in case components
 import ErrorPage from "./src/components/ErrorPage";
