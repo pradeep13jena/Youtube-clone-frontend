@@ -1,0 +1,22 @@
+/* styles.css */
+#id1::-webkit-scrollbar,
+.videoWatcher::-webkit-scrollbar,
+.sliderContent::-webkit-scrollbar,
+.account-page::-webkit-scrollbar,
+.channel-list::-webkit-scrollbar,
+nav::-webkit-scrollbar {
+  width: 0;
+}
+
+/* On hover: show scrollbar */
+nav:hover::-webkit-scrollbar {
+  width: 4px;
+}
+nav::-webkit-scrollbar-thumb {
+  background-color: #4b5563c2; /* Gray-600 */
+  border-radius: 4px;
+}
+
+nav::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* Gray-100 */
+}
