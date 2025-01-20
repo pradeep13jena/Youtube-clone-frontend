@@ -46,7 +46,7 @@ export default function Channel() {
   function refetchChannelDetails() {
     if (token && channel) {
       axios
-        .get(`https://youtubepradeep.onrender.com/${channel}`, {
+        .get(`https://youtubepradeep.onrender.com/channel/${channel}`, {
           headers: {
             Authorization: `JWT ${token}`,
           },

@@ -706,7 +706,7 @@ export default function ChannelOwner() {
               </div>
             </div>
           </div>
-          <div className="videoList w-full border-b-2 sm:sticky top-0 bg-white z-0">
+          <div className="videoList w-full border-b-2 sm:sticky top-0 bg-white z-50">
             <div className="sliderContent pb-0 sm:pb-3 flex justify-between md:justify-start overflow-x-auto gap-6">
               <h1 className="font-roboto text-base font-medium text-black cursor-pointer transition-all">
                 Home
