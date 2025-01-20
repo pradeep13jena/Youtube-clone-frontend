@@ -111,7 +111,7 @@ export default function ChannelOwnerRender({ cat, setChannelDetails }) {
       } = videoValues;
       const formData = { title, description, videoLink, thumbnail, categories };
       axios
-        .put(`http://localhost:5000/videos/${cat._id}`, formData, {
+        .put(`https://youtubepradeep.onrender.com/videos/${cat._id}`, formData, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -124,7 +124,7 @@ export default function ChannelOwnerRender({ cat, setChannelDetails }) {
   function deleteVideo(videoId) {
     axios
       .put(
-        `http://localhost:5000/videos/${cat.channelName}/${cat._id}`,
+        `https://youtubepradeep.onrender.com/videos/${cat.channelName}/${cat._id}`,
         {},
         {
           headers: {

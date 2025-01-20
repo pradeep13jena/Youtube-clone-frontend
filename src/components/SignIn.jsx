@@ -12,9 +12,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function SignIn() {
   const [action, setAction] = useState("Login");
-  const [url, setURL] = useState("http://localhost:5000/login");
-  const registerURL = "http://localhost:5000/register";
-  const loginURL = "http://localhost:5000/login";
+  const [url, setURL] = useState("https://youtubepradeep.onrender.com/login");
+  const registerURL = "https://youtubepradeep.onrender.com/register";
+  const loginURL = "https://youtubepradeep.onrender.com/login";
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

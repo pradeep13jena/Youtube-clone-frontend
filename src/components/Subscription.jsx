@@ -33,12 +33,12 @@ export default function Subscription() {
       };
 
       // Fetch user data
-      fetchData("http://localhost:5000/user", "POST")
+      fetchData("https://youtubepradeep.onrender.com/user", "POST")
         .then((userData) => setUser(userData))
         .catch((error) => console.error("Error fetching user data:", error));
 
       // Fetch videos data
-      fetchData("http://localhost:5000/videos")
+      fetchData("https://youtubepradeep.onrender.com/videos")
         .then((videoData) => {
           setVideos(videoData);
         })

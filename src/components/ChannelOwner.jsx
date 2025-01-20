@@ -69,7 +69,7 @@ export default function ChannelOwner() {
   useEffect(() => {
     if (token && channel) {
       axios
-        .get(`http://localhost:5000/channel/${channel}`, {
+        .get(`https://youtubepradeep.onrender.com/channel/${channel}`, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -91,7 +91,7 @@ export default function ChannelOwner() {
     if (confirmDelete) {
       axios
         .delete(
-          `http://localhost:5000/channel/${channel}`,
+          `https://youtubepradeep.onrender.com/channel/${channel}`,
           {
             headers: {
               Authorization: `JWT ${token}`,
@@ -174,7 +174,7 @@ export default function ChannelOwner() {
       const formData = { title, description, videoLink, thumbnail, categories };
       axios
         .post(
-          `http://localhost:5000/channel/${channelDetails.channelName}/videos`,
+          `https://youtubepradeep.onrender.com/channel/${channelDetails.channelName}/videos`,
           formData,
           {
             headers: {
@@ -224,7 +224,7 @@ export default function ChannelOwner() {
       const formData = { channelBanner: BannerValues.bannerURL };
       axios
         .put(
-          `http://localhost:5000/channel/${channelDetails.channelName}`,
+          `https://youtubepradeep.onrender.com/channel/${channelDetails.channelName}`,
           formData,
           {
             headers: {
@@ -270,7 +270,7 @@ export default function ChannelOwner() {
       const formData = { channelLogo: LogoValues.logoURL };
       axios
         .put(
-          `http://localhost:5000/channel/${channelDetails.channelName}`,
+          `https://youtubepradeep.onrender.com/channel/${channelDetails.channelName}`,
           formData,
           {
             headers: {
@@ -332,7 +332,7 @@ export default function ChannelOwner() {
 
       axios
         .put(
-          `http://localhost:5000/channel/${channelDetails.channelName}`,
+          `https://youtubepradeep.onrender.com/channel/${channelDetails.channelName}`,
           formData,
           {
             headers: {

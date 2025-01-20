@@ -12,7 +12,7 @@ const ShowPLaylist = ({ cat, cata, token }) => {
     setChecked(isChecked);
     axios
       .put(
-        `http://localhost:5000/playlist/${cat._id}`,
+        `https://youtubepradeep.onrender.com/playlist/${cat._id}`,
         {
           userName: cat.userD.username,
           playlistName: cata.name,

@@ -68,7 +68,7 @@ export default function Account() {
     const fetchUserData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/user",
+          "https://youtubepradeep.onrender.com/user",
           {},
           {
             headers: {
@@ -187,7 +187,7 @@ export default function Account() {
         description,
       };
       axios
-        .post("http://localhost:5000/channel", formData, {
+        .post("https://youtubepradeep.onrender.com/channel", formData, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -208,7 +208,7 @@ export default function Account() {
     const isValid = handlePlaylistValidate(playlistValues);
     if (isValid) {
       axios
-        .post("http://localhost:5000/playlist", playlistValues, {
+        .post("https://youtubepradeep.onrender.com/playlist", playlistValues, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -226,7 +226,7 @@ export default function Account() {
   function deletePlaylist(playlist) {
     axios
       .post(
-        `http://localhost:5000/playlist/${playlist}`,
+        `https://youtubepradeep.onrender.com/playlist/${playlist}`,
         {},
         {
           headers: {

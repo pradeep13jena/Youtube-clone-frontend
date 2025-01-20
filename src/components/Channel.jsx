@@ -27,7 +27,7 @@ export default function Channel() {
   function handlesub() {
     axios
       .put(
-        "http://localhost:5000/subscribe",
+        "https://youtubepradeep.onrender.com/subscribe",
         { channelName: channelDetails.channelName },
         {
           headers: {
@@ -46,7 +46,7 @@ export default function Channel() {
   function refetchChannelDetails() {
     if (token && channel) {
       axios
-        .get(`http://localhost:5000/channel/${channel}`, {
+        .get(`https://youtubepradeep.onrender.com/${channel}`, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -63,7 +63,7 @@ export default function Channel() {
   function refetchUserDetails() {
     axios
       .post(
-        "http://localhost:5000/user",
+        "https://youtubepradeep.onrender.com/user",
         {},
         {
           headers: {

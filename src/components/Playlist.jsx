@@ -16,7 +16,7 @@ export default function Playlist() {
     const fetchUserData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/user",
+          "https://youtubepradeep.onrender.com/user",
           {},
           {
             headers: {

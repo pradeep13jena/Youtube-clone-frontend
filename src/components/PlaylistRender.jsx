@@ -10,7 +10,7 @@ export default function Homeviewer(cat) {
   function handleCLick() {
     axios
       .put(
-        `http://localhost:5000/playlist/${cat.video._id}`,
+        `https://youtubepradeep.onrender.com/playlist/${cat.video._id}`,
         {
           userName: cat.user.username,
           playlistName: cat.playlistName,

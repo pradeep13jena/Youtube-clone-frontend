@@ -50,7 +50,7 @@ export default function Watch() {
   const fetchUserData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/user",
+        "https://youtubepradeep.onrender.com/user",
         {},
         {
           headers: {
@@ -69,7 +69,7 @@ export default function Watch() {
     if (token && _id) {
       // Ensure token and _id are available before making the request
       axios
-        .get(`http://localhost:5000/videos/${_id}`, {
+        .get(`https://youtubepradeep.onrender.com/videos/${_id}`, {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -83,7 +83,7 @@ export default function Watch() {
         });
 
       axios
-        .get("http://localhost:5000/videos", {
+        .get("https://youtubepradeep.onrender.com/videos", {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -96,7 +96,7 @@ export default function Watch() {
         });
 
       axios
-        .get("http://localhost:5000/videos", {
+        .get("https://youtubepradeep.onrender.com/videos", {
           headers: {
             Authorization: `JWT ${token}`,
           },
@@ -131,7 +131,7 @@ export default function Watch() {
     if (newComment.trim() !== "") {
       axios
         .post(
-          `http://localhost:5000/comment`,
+          `https://youtubepradeep.onrender.com/comment`,
           {
             id: videos._id,
             comment: newComment,
@@ -154,7 +154,7 @@ export default function Watch() {
   function likeVideo() {
     axios
       .put(
-        `http://localhost:5000/like/${_id}`,
+        `https://youtubepradeep.onrender.com/like/${_id}`,
         {},
         {
           headers: {
@@ -174,7 +174,7 @@ export default function Watch() {
     const fetchUserData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/user",
+          "https://youtubepradeep.onrender.com/user",
           {},
           {
             headers: {
@@ -195,7 +195,7 @@ export default function Watch() {
   function dislikeVideo() {
     axios
       .put(
-        `http://localhost:5000/dislike/${_id}`,
+        `https://youtubepradeep.onrender.com/dislike/${_id}`,
         {},
         {
           headers: {
@@ -211,7 +211,7 @@ export default function Watch() {
   function handlesub() {
     axios
       .put(
-        "http://localhost:5000/subscribe",
+        "https://youtubepradeep.onrender.com/subscribe",
         {
           channelName: videos.channelName,
         },

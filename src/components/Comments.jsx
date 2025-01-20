@@ -52,7 +52,7 @@ export default function Comments({
     if (commentId && videoid && editedText && token) {
       axios
         .put(
-          `http://localhost:5000/comment`,
+          `https://youtubepradeep.onrender.com/comment`,
           {
             videoid: videoid,
             commentId: commentId,
@@ -83,7 +83,7 @@ export default function Comments({
   const deleteComment = (commentId) => {
     if (commentId) {
       axios
-        .delete(`http://localhost:5000/comment`, {
+        .delete(`https://youtubepradeep.onrender.com/comment`, {
           data: {
             id: videos._id,
             commentId: commentId,
