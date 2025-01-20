@@ -57,6 +57,8 @@ export default function SignIn() {
         .then((res) => {
           if (action === "Login") {
             dispatch(login(res.data.jwtToken));
+            console.log(res.data)
+            alert(res.data.message)
             navigate("/");
           }
         })
