@@ -57,9 +57,10 @@ export default function SignIn() {
         .then((res) => {
           if (action === "Login") {
             dispatch(login(res.data.jwtToken));
+            navigate("/");
+          } else if (action === "Sign Up") { 
             console.log(res.data)
             alert(res.data.message)
-            navigate("/");
           }
         })
         .catch((err) => alert(err.response.data.error));
