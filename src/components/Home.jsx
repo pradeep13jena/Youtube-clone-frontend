@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     if (token !== null) {
       axios
-        .get("http://localhost:5000/videos", {
+        .get("https://youtubepradeep.onrender.com/videos", {
           headers: {
             Authorization: `JWT ${token}`,
           },
