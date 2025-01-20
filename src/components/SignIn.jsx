@@ -55,12 +55,14 @@ export default function SignIn() {
       axios
         .post(url, formData)
         .then((res) => {
+          if(url === "https://youtubepradeep.onrender.com/register"){
+            console.log(res.data)
+            alert(res.data.message)
+          }
+          
           if (action === "Login") {
             dispatch(login(res.data.jwtToken));
             navigate("/");
-          } else { 
-            console.log(res.data)
-            alert(res.data.message)
           }
         })
         .catch((err) => alert(err.response.data.error));
