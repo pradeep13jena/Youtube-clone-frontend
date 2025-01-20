@@ -12,7 +12,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAuth } from "../features/tokenSlice.js";
-import Comments from "./comments.jsx";
+import Comments from "./Comments";
 import { render } from "../features/subscriptionslice.js";
 
 const style = {
